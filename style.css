@@ -1,0 +1,117 @@
+:root{
+--dark:#374151;
+--darker:#1F2937;
+--darkest:#111827;
+--gray:#6B7280;
+--light:#EEE;
+--pink:#EC4899;
+--purple:#8B5CF6;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', 
+    Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    background-color:#6B7280;
+    /* color:darkorange; */
+    
+}
+header{
+    padding: 2rem 1rem;
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
+    
+}
+
+header h1{
+    font-weight:300px;
+    color:#EEE;
+    margin-bottom: 1.5rem;
+}
+#forminput{
+    display:flex;
+}
+
+input ,button{
+    appearance:none;
+    border:none;
+    outline:none;
+    background:none;
+}
+#inputtext{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem 1rem;
+    margin:1rem;
+    border-radius:0.5rem;
+    color:#EEE;
+    font-size:1.2rem;
+}
+#inputtext::placeholde{
+    color:#EC4899;
+}
+#inputsubmit{
+    color:#1F2937;
+    background-color:gold;
+    padding: 1rem 1rem;
+    margin:1rem;
+    border-radius:0.5rem;
+    font-size:1rem;
+}
+main{
+    max-width:800px;
+    margin:0 auto;
+    width:100%;
+}
+
+
+.to-do-list h2{
+    font-weight:300px;
+    color:#EEE;
+    margin-bottom: 1.5rem;
+}
+ #tasks .task{
+    display:flex;
+    justify-content:space-between;
+    background-color:green;
+    padding:0.5rem;
+    border-radius:1rem;
+    margin:1rem;
+    font-size:20px;
+
+}
+#task .task .content .text:not(:read-only){
+    color:aqua;
+}
+  .action{
+    display:flex;
+    align-items: flex-end;
+
+    
+}
+#tasks button{
+    cursor:pointer;
+    margin: 0 0.5rem;
+    background-color:#8B5CF6;
+    padding:4px;
+    border-radius:2px;
+}
+.edit{
+    background-color:yellowgreen;
+}
+.delete{
+    background-color:red;
+}
+.text{
+font-size:20px;
+}
+
+
